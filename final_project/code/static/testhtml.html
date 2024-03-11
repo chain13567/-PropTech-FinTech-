@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>房價預測</title>
+  <link rel="stylesheet" href="../static/style.css">
+  <script src="../static/testjs.js"></script>
+</head>
+<body>
+  <h1>房價預測</h1>
+  <label for="address">請輸入地址：</label><br>
+  <input type="text" id="address" name="address"><br>
+
+  <label for="berth">請輸入車位:</label><br>
+  <input type="number" id="berth" name="berth"><br>
+  
+  <label for="land_area">請輸入土地區域:</label><br>
+  <input type="number" id="land_area" name="land_area"><br>
+
+  <label for="tot_floor">請輸入總樓層:</label><br>
+  <input type="number" id="tot_floor" name="tot_floor"><br>
+            
+  <label for="room_age">請輸入屋齡:</label><br>
+  <input type="number" id="room_age" name="room_age"><br>
+            
+  <label for="build_area">請輸入建築區域:</label><br>
+  <input type="number" id="build_area" name="build_area"><br>
+    
+  <label for="room">請輸入房間數:</label><br>
+  <input type="number" id="room" name="room"><br>
+
+  <br><br>
+  <button onclick="sendData()">預測</button>
+  
+  <br><br>
+  <input type="text" id="result" readonly>
+  <br><br>
+  <span id="nearestStationResult"></span>
+  <br><br>
+  <span id="nearestMRTStationResult"></span>
+</body>
+</html>
